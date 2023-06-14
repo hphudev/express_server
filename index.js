@@ -1,6 +1,6 @@
 const express = require('express')
 const app = express()
-const port = 5000
+const port = process.env.PORT || 5500
 const {database, firestore} = require('./firebase_module')
 const { onValue, ref } = require('firebase/database')
 const { addDoc, collection } = require('firebase/firestore')
