@@ -2,13 +2,13 @@
   "name": "express",
   "version": "1.0.0",
   "description": "",
-  "main": "app.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node index.js",
     "start-pm2": "pm2 start ecosystem.config.js",
     "restart": "pm2 restart ecosystem.config.js",
-    "stop": "pm2 stop my-app",
+    "stop": "pm2 stop express",
     "pm2list": "pm2 list",
     "build": "babel-node index.js"
   },
