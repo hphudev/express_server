@@ -5,7 +5,10 @@
   "main": "app.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "node index.js",
+    "start": "pm2 start ecosystem.config.js",
+    "restart": "pm2 restart ecosystem.config.js",
+    "stop": "pm2 stop express",
+    "pm2list": "pm2 list",
     "build": "babel-node index.js"
   },
   "author": "",
@@ -13,7 +16,8 @@
   "dependencies": {
     "dotenv": "^16.1.4",
     "express": "^4.18.2",
-    "firebase": "^9.22.2"
+    "firebase": "^9.22.2",
+    "pm2": "^5.3.0"
   },
   "devDependencies": {
     "@babel/cli": "^7.22.5",
