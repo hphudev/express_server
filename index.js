@@ -20,7 +20,10 @@ onValue(ref(database, '/'), (snapshot) => {
 })
 
 app.get('/', (req, res) => {
- res.send("Server started")
+  setTimeout(() => {
+    window.location.reload()
+  }, 5000)
+  res.send("Server started")
 })
 
 app.listen(port, () => {
